@@ -3,13 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IERIICH 13 | International Exhibition of Research, Invention, Innovation, Creativity & Humanities</title>
+    <title>IERIICH 13 | International Exhibition of Research, Invention, Innovation, Creativity &amp; Humanities</title>
     
     <!-- Meta tags for Academic & Final Year Project Exhibition -->
-    <meta name="description" content="IERIICH 13 - International Exhibition of Research, Invention, Innovation, Creativity & Humanities. 4th - 6th January 2026 at SITC Hall, Universiti Pendidikan Sultan Idris (UPSI). Organized by Fakulti Komputeran & Meta-Teknologi.">
-    <meta name="keywords" content="IERIICH 13, FYP Exhibition, UPSI, Meta-Teknologi, SITC Hall, Research, Invention, Innovation, Creativity, Humanities, Final Year Project">
+    <meta name="description" content="IERIICH 13 is the flagship Final Year Project and Research Exhibition organized by Fakulti Komputeran &amp; Meta-Teknologi (META), Universiti Pendidikan Sultan Idris (UPSI). 4th - 6th January 2026 at SITC Hall.">
+    <meta name="keywords" content="IERIICH 13, FYP Exhibition, Universiti Pendidikan Sultan Idris, UPSI, Fakulti Komputeran &amp; Meta-Teknologi, SITC Hall, Research, Invention, Innovation, Creativity, Humanities">
 
-    <!-- Fonts -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('images/ieriich-emblem.svg') }}">
+    <link rel="alternate icon" href="{{ asset('favicon.ico') }}">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +28,6 @@
         .heading-font {
             font-family: 'Space Grotesk', sans-serif;
         }
-        /* Custom geometric low-poly background pattern resembling the poster */
         .poster-mesh-bg {
             background-color: #f8fafc;
             background-image: 
@@ -49,7 +52,7 @@
           searchQuery: '',
           selectedTrack: 'all',
           activeScheduleDay: 0,
-          // Live countdown timer calculation for 4th Jan 2026 09:00:00
+          // Live Countdown calculation for Jan 4th, 2026
           days: '00',
           hours: '00',
           minutes: '00',
@@ -74,74 +77,66 @@
       }"
       x-init="initCountdown()">
 
-    <!-- TOP ACCENT BAR -->
-    <div class="h-1.5 w-full bg-gradient-to-r from-slate-700 via-amber-500 to-yellow-600"></div>
+    <!-- TOP PRESTIGE ACCENT STRIP -->
+    <div class="h-1.5 w-full bg-gradient-to-r from-slate-900 via-amber-500 to-yellow-600"></div>
 
-    <!-- INSTITUTIONAL TOP BAR -->
-    <div class="border-b border-slate-200/80 bg-white/70 backdrop-blur text-xs text-slate-600 py-2 hidden sm:block">
+    <!-- EXECUTIVE INSTITUTIONAL TOP BAR -->
+    <div class="border-b border-slate-200/80 bg-white/70 backdrop-blur text-xs text-slate-600 py-2.5 hidden sm:block">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <div class="flex items-center space-x-6">
-                <span class="flex items-center font-medium text-slate-700">
-                    <svg class="w-3.5 h-3.5 text-amber-600 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a10.97 10.97 0 014.75 3.949V17a1 1 0 002 0v-4.999a10.97 10.97 0 014.75-3.951l2.644-1.132a1 1 0 000-1.84l-7-3zM5.5 12.35V15a1 1 0 002 0v-1.65a9.006 9.006 0 01-2-.999zM12.5 15a1 1 0 002 0v-2.65a9.006 9.006 0 01-2 1z"/>
-                    </svg>
-                    Universiti Pendidikan Sultan Idris (UPSI)
+            <div class="flex items-center space-x-4">
+                <span class="inline-flex items-center font-bold text-slate-800">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
+                    UNIVERSITI PENDIDIKAN SULTAN IDRIS (UPSI)
                 </span>
                 <span class="text-slate-300">|</span>
-                <span>Fakulti Komputeran &amp; Meta-Teknologi (META)</span>
+                <span class="font-medium text-slate-600">Fakulti Komputeran &amp; Meta-Teknologi (META)</span>
                 <span class="text-slate-300">|</span>
-                <span class="text-amber-700 font-semibold">100 Tahun SITC Legacy (1922 – 2022)</span>
+                <span class="text-amber-700 font-bold">100 Tahun SITC Legacy (1922 – 2022)</span>
             </div>
-            <div class="flex items-center space-x-4">
-                <span class="inline-flex items-center text-slate-500">
-                    <svg class="w-3.5 h-3.5 text-slate-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center space-x-5 text-slate-500">
+                <span class="flex items-center">
+                    <svg class="w-3.5 h-3.5 text-amber-600 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                     </svg>
-                    Dewan SITC, Tanjung Malim
+                    Dewan SITC, Tanjung Malim, Perak
                 </span>
-                <a href="#schedule" class="text-amber-600 hover:text-amber-700 font-medium">Event Schedule &rarr;</a>
+                <a href="#downloads" class="text-slate-600 hover:text-amber-700 font-semibold transition">
+                    Download Handbook &rarr;
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- NAVIGATION BAR -->
+    <!-- MAIN NAVIGATION BAR -->
     <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Brand / Logo -->
-                <a href="{{ route('home') }}" class="flex items-center space-x-3 group">
-                    <div class="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white shadow-md border border-slate-700 group-hover:scale-105 transition-transform duration-300">
-                        <span class="heading-font font-black tracking-tighter text-xl text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-500">13</span>
-                        <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-amber-500 rounded-full border-2 border-white flex items-center justify-center">
-                            <span class="block w-1.5 h-1.5 bg-slate-950 rounded-full"></span>
-                        </div>
-                    </div>
-                    <div class="flex flex-col">
-                        <div class="flex items-center space-x-1.5">
-                            <span class="heading-font text-2xl font-black tracking-tight text-slate-900">IERIICH</span>
-                            <span class="text-xs px-2 py-0.5 rounded-full font-bold bg-amber-100 text-amber-800 border border-amber-300">13TH</span>
-                        </div>
-                        <span class="text-[10px] uppercase tracking-wider font-semibold text-slate-500">Exhibition of Research &amp; Inventions</span>
-                    </div>
+                
+                <!-- Official Logo -->
+                <a href="{{ route('home') }}" class="flex items-center space-x-3 group py-2">
+                    <img src="{{ asset('images/ieriich-horizontal-logo.svg') }}" 
+                         alt="IERIICH 13 Logo" 
+                         class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-102">
                 </a>
 
                 <!-- Desktop Nav Links -->
-                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-700">
                     <a href="#about" class="hover:text-amber-600 transition-colors">About</a>
-                    <a href="#tracks" class="hover:text-amber-600 transition-colors">Tracks</a>
+                    <a href="#tracks" class="hover:text-amber-600 transition-colors">Four Pillars</a>
                     <a href="#showcase" class="hover:text-amber-600 transition-colors">FYP Showcase</a>
                     <a href="#schedule" class="hover:text-amber-600 transition-colors">Schedule</a>
                     <a href="#awards" class="hover:text-amber-600 transition-colors">Awards</a>
-                    <a href="#venue" class="hover:text-amber-600 transition-colors">Venue &amp; Info</a>
-                    <a href="#faq" class="hover:text-amber-600 transition-colors">FAQ</a>
+                    <a href="#judges" class="hover:text-amber-600 transition-colors">Jury</a>
+                    <a href="#venue" class="hover:text-amber-600 transition-colors">Venue &amp; Map</a>
+                    <a href="#downloads" class="hover:text-amber-600 transition-colors">Downloads</a>
                 </nav>
 
                 <!-- Action CTA Buttons -->
                 <div class="hidden sm:flex items-center space-x-3">
                     <button @click="posterModalOpen = true" 
                             type="button"
-                            class="inline-flex items-center px-4 py-2 text-xs font-semibold rounded-lg border border-slate-300 bg-white/80 text-slate-700 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-400 shadow-sm transition-all duration-200">
+                            class="inline-flex items-center px-4 py-2.5 text-xs font-bold rounded-xl border border-slate-300 bg-white/90 text-slate-700 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-400 shadow-xs transition-all duration-200">
                         <svg class="w-4 h-4 mr-1.5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                         </svg>
@@ -150,7 +145,7 @@
 
                     <button @click="registerModalOpen = true"
                             type="button"
-                            class="inline-flex items-center px-4 py-2 text-xs font-bold rounded-lg bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 text-white shadow-md hover:from-amber-700 hover:to-yellow-700 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+                            class="inline-flex items-center px-4 py-2.5 text-xs font-bold rounded-xl bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 text-white shadow-md hover:from-amber-700 hover:to-yellow-700 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
                         <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
                         </svg>
@@ -158,11 +153,11 @@
                     </button>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center sm:hidden">
+                <!-- Mobile Menu Hamburger -->
+                <div class="flex items-center lg:hidden">
                     <button @click="mobileMenuOpen = !mobileMenuOpen" 
                             type="button" 
-                            class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none"
+                            class="p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none"
                             aria-label="Toggle navigation menu">
                         <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -175,7 +170,7 @@
             </div>
         </div>
 
-        <!-- Mobile Navigation Drawer -->
+        <!-- Mobile Drawer -->
         <div x-show="mobileMenuOpen" 
              x-transition:enter="transition ease-out duration-200"
              x-transition:enter-start="opacity-0 -translate-y-2"
@@ -183,92 +178,68 @@
              x-transition:leave="transition ease-in duration-150"
              x-transition:leave-start="opacity-100 translate-y-0"
              x-transition:leave-end="opacity-0 -translate-y-2"
-             class="sm:hidden border-b border-slate-200 bg-white/95 backdrop-blur px-4 pt-3 pb-6 space-y-3"
+             class="lg:hidden border-b border-slate-200 bg-white/95 backdrop-blur px-5 pt-3 pb-6 space-y-3 shadow-xl"
              style="display: none;">
-            <div class="flex flex-col space-y-2 font-medium text-slate-800">
-                <a @click="mobileMenuOpen = false" href="#about" class="px-3 py-2 rounded-md hover:bg-slate-100">About Exhibition</a>
-                <a @click="mobileMenuOpen = false" href="#tracks" class="px-3 py-2 rounded-md hover:bg-slate-100">Tracks</a>
-                <a @click="mobileMenuOpen = false" href="#showcase" class="px-3 py-2 rounded-md hover:bg-slate-100">FYP Showcase</a>
-                <a @click="mobileMenuOpen = false" href="#schedule" class="px-3 py-2 rounded-md hover:bg-slate-100">Program Schedule</a>
-                <a @click="mobileMenuOpen = false" href="#awards" class="px-3 py-2 rounded-md hover:bg-slate-100">Awards &amp; Judging</a>
-                <a @click="mobileMenuOpen = false" href="#venue" class="px-3 py-2 rounded-md hover:bg-slate-100">Venue &amp; Logistics</a>
-                <a @click="mobileMenuOpen = false" href="#faq" class="px-3 py-2 rounded-md hover:bg-slate-100">FAQ</a>
+            <div class="flex flex-col space-y-2 font-semibold text-slate-800 text-sm">
+                <a @click="mobileMenuOpen = false" href="#about" class="px-3 py-2 rounded-lg hover:bg-slate-100">About Exhibition</a>
+                <a @click="mobileMenuOpen = false" href="#tracks" class="px-3 py-2 rounded-lg hover:bg-slate-100">Four Pillars</a>
+                <a @click="mobileMenuOpen = false" href="#showcase" class="px-3 py-2 rounded-lg hover:bg-slate-100">FYP Showcase</a>
+                <a @click="mobileMenuOpen = false" href="#schedule" class="px-3 py-2 rounded-lg hover:bg-slate-100">Program Schedule</a>
+                <a @click="mobileMenuOpen = false" href="#awards" class="px-3 py-2 rounded-lg hover:bg-slate-100">Awards &amp; Judging</a>
+                <a @click="mobileMenuOpen = false" href="#judges" class="px-3 py-2 rounded-lg hover:bg-slate-100">Jury Panel</a>
+                <a @click="mobileMenuOpen = false" href="#venue" class="px-3 py-2 rounded-lg hover:bg-slate-100">Venue &amp; Maps</a>
+                <a @click="mobileMenuOpen = false" href="#downloads" class="px-3 py-2 rounded-lg hover:bg-slate-100">Downloads</a>
+                <a @click="mobileMenuOpen = false" href="#faq" class="px-3 py-2 rounded-lg hover:bg-slate-100">FAQ</a>
             </div>
-            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
-                <button @click="posterModalOpen = true; mobileMenuOpen = false" class="w-full py-2.5 px-4 text-center text-sm font-semibold rounded-lg border border-slate-300 bg-slate-50 text-slate-800">
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                <button @click="posterModalOpen = true; mobileMenuOpen = false" class="w-full py-2.5 px-4 text-center text-sm font-bold rounded-xl border border-slate-300 bg-slate-50 text-slate-800">
                     View Event Poster
                 </button>
-                <button @click="registerModalOpen = true; mobileMenuOpen = false" class="w-full py-2.5 px-4 text-center text-sm font-bold rounded-lg bg-amber-600 text-white">
+                <button @click="registerModalOpen = true; mobileMenuOpen = false" class="w-full py-2.5 px-4 text-center text-sm font-bold rounded-xl bg-amber-600 text-white">
                     Register / Inquire
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION (MATCHING THE ORIGINAL POSTER VISUALS) -->
-    <section class="relative pt-8 pb-20 md:pt-16 md:pb-28 overflow-hidden geometric-polygons">
-        <!-- Ambient lighting decorative orbs -->
-        <div class="absolute top-12 left-1/4 w-96 h-96 bg-amber-200/25 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- HERO SECTION (PROPORTIONAL, METALLIC & PRESTIGIOUS) -->
+    <section class="relative pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden geometric-polygons">
+        <div class="absolute top-10 left-1/4 w-96 h-96 bg-amber-200/25 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute top-24 right-1/4 w-96 h-96 bg-slate-300/30 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Column: Poster Title & Event Typography -->
+                <!-- Left Column: Master Logo, Date Box & Countdown -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     
-                    <!-- Top Category Label -->
-                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-slate-300/80 shadow-xs backdrop-blur">
+                    <!-- Prestige Badge -->
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-slate-300/80 shadow-xs backdrop-blur">
                         <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                        <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Official Final Year Project Exhibition</span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-800">Final Year Project &amp; Research Expo</span>
                         <span class="text-slate-300">•</span>
-                        <span class="text-xs font-semibold text-amber-700">2026 Edition</span>
+                        <span class="text-xs font-semibold text-amber-700">UPSI META 2026</span>
                     </div>
 
-                    <!-- HERO HEADLINE REPRODUCING POSTER -->
-                    <div class="space-y-1">
-                        <!-- Big Metallic IERIICH 13 Visual Title -->
-                        <div class="flex items-center justify-center lg:justify-start space-x-3">
-                            <h1 class="heading-font text-5xl sm:text-7xl xl:text-8xl font-black tracking-tight text-slate-900 drop-shadow-sm flex items-center">
-                                <span class="bg-gradient-to-b from-slate-900 via-slate-700 to-slate-950 bg-clip-text text-transparent">IERII</span>
-                                <span class="relative inline-block text-amber-500 mx-0.5">
-                                    <span class="bg-gradient-to-b from-amber-400 via-yellow-500 to-amber-700 bg-clip-text text-transparent">C</span>
-                                    <!-- The '13' inside the emblem badge -->
-                                    <span class="absolute inset-0 flex items-center justify-center text-[0.42em] font-black tracking-tighter text-amber-700 drop-shadow-xs">13</span>
-                                </span>
-                                <span class="bg-gradient-to-b from-slate-900 via-slate-700 to-slate-950 bg-clip-text text-transparent">H</span>
-                            </h1>
-                        </div>
-
-                        <!-- Poster Sub-headings -->
-                        <div class="pt-1">
-                            <div class="text-xs sm:text-sm tracking-[0.28em] uppercase font-bold text-slate-500">
-                                International Exhibition of
-                            </div>
-                            <div class="heading-font text-3xl sm:text-5xl font-black uppercase tracking-tight text-slate-900 pt-1">
-                                RESEARCH
-                            </div>
-                            <div class="heading-font text-xl sm:text-3xl font-black uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-700 pt-1">
-                                INVENTION • INNOVATION
-                            </div>
-                            <div class="text-xs sm:text-base tracking-[0.22em] uppercase font-bold text-slate-700 pt-1">
-                                CREATIVITY &amp; HUMANITIES
-                            </div>
-                        </div>
+                    <!-- MASTER VECTOR LOGO -->
+                    <div class="max-w-xl mx-auto lg:mx-0 py-2">
+                        <img src="{{ asset('images/ieriich-logo.svg') }}" 
+                             alt="IERIICH 13 Logo - International Exhibition of Research, Invention, Innovation, Creativity & Humanities" 
+                             class="w-full h-auto drop-shadow-sm select-none">
                     </div>
 
-                    <!-- Date & Venue Highlight Box (Accurate to Poster) -->
-                    <div class="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200/90 shadow-lg backdrop-blur-md max-w-xl mx-auto lg:mx-0">
+                    <!-- Event Key Facts Box -->
+                    <div class="p-5 rounded-2xl bg-white/95 border border-slate-200/90 shadow-lg backdrop-blur-md max-w-xl mx-auto lg:mx-0">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
                             
-                            <!-- Date Block -->
+                            <!-- Date Info -->
                             <div class="flex items-center space-x-3.5 pr-2">
                                 <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center shadow-md text-white shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                                     </svg>
                                 </div>
-                                <div>
+                                <div class="text-left">
                                     <div class="heading-font text-2xl font-black text-slate-900 leading-tight">
                                         4<span class="text-sm font-semibold uppercase align-super text-amber-600">th</span> – 6<span class="text-sm font-semibold uppercase align-super text-amber-600">th</span>
                                     </div>
@@ -276,7 +247,7 @@
                                 </div>
                             </div>
 
-                            <!-- Venue Block -->
+                            <!-- Venue Info -->
                             <div class="flex items-center space-x-3.5 pt-3 sm:pt-0 sm:pl-4">
                                 <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-md text-white shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -284,7 +255,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                     </svg>
                                 </div>
-                                <div>
+                                <div class="text-left">
                                     <div class="heading-font text-2xl font-black text-slate-900 leading-tight">SITC HALL</div>
                                     <div class="text-xs font-bold uppercase tracking-wider text-slate-600">UPSI TANJUNG MALIM</div>
                                 </div>
@@ -300,30 +271,30 @@
                             Exhibition Opening Countdown
                         </div>
                         <div class="grid grid-cols-4 gap-2 sm:gap-3 text-center">
-                            <div class="p-2 sm:p-3 rounded-xl bg-white/80 border border-slate-200/80 shadow-xs">
+                            <div class="p-2 sm:p-3 rounded-xl bg-white/90 border border-slate-200/90 shadow-xs">
                                 <div class="heading-font text-2xl sm:text-3xl font-extrabold text-slate-900" x-text="days">00</div>
                                 <div class="text-[10px] uppercase font-bold text-slate-500">Days</div>
                             </div>
-                            <div class="p-2 sm:p-3 rounded-xl bg-white/80 border border-slate-200/80 shadow-xs">
+                            <div class="p-2 sm:p-3 rounded-xl bg-white/90 border border-slate-200/90 shadow-xs">
                                 <div class="heading-font text-2xl sm:text-3xl font-extrabold text-slate-900" x-text="hours">00</div>
                                 <div class="text-[10px] uppercase font-bold text-slate-500">Hours</div>
                             </div>
-                            <div class="p-2 sm:p-3 rounded-xl bg-white/80 border border-slate-200/80 shadow-xs">
+                            <div class="p-2 sm:p-3 rounded-xl bg-white/90 border border-slate-200/90 shadow-xs">
                                 <div class="heading-font text-2xl sm:text-3xl font-extrabold text-slate-900" x-text="minutes">00</div>
                                 <div class="text-[10px] uppercase font-bold text-slate-500">Mins</div>
                             </div>
-                            <div class="p-2 sm:p-3 rounded-xl bg-white/80 border border-slate-200/80 shadow-xs">
+                            <div class="p-2 sm:p-3 rounded-xl bg-white/90 border border-slate-200/90 shadow-xs">
                                 <div class="heading-font text-2xl sm:text-3xl font-extrabold text-amber-600" x-text="seconds">00</div>
                                 <div class="text-[10px] uppercase font-bold text-slate-500">Secs</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- CTA Buttons -->
+                    <!-- CTA Action Buttons -->
                     <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
                         <a href="#showcase" 
                            class="px-6 py-3.5 rounded-xl text-sm font-bold bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg transition-all duration-200 flex items-center group">
-                            <span>Browse Final Year Projects</span>
+                            <span>Explore Project Directory</span>
                             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                             </svg>
@@ -335,7 +306,7 @@
                             <svg class="w-4 h-4 mr-2 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
                             </svg>
-                            View Event Poster
+                            View Official Poster
                         </button>
                     </div>
 
@@ -345,20 +316,17 @@
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="relative group max-w-sm sm:max-w-md w-full">
                         
-                        <!-- Decorative Frame Gradient Glow -->
                         <div class="absolute -inset-2 bg-gradient-to-r from-amber-400/40 via-yellow-500/30 to-slate-400/40 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-500"></div>
 
-                        <!-- Card Container -->
-                        <div class="relative rounded-2xl bg-white p-3 shadow-2xl border border-slate-200/90 overflow-hidden transform group-hover:-translate-y-1 transition duration-300">
+                        <div class="relative rounded-3xl bg-white p-3.5 shadow-2xl border border-slate-200/90 overflow-hidden transform group-hover:-translate-y-1 transition duration-300">
                             
                             <!-- Poster Image Container -->
-                            <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 cursor-pointer"
+                            <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100 cursor-pointer"
                                  @click="posterModalOpen = true">
                                 <img src="{{ asset('images/ieriich-poster.jpg') }}" 
-                                     alt="IERIICH 13 Official Poster" 
+                                     alt="Official IERIICH 13 Poster" 
                                      class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
 
-                                <!-- Hover Overlay & Expand Icon -->
                                 <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-4">
                                     <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-2">
                                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -366,26 +334,24 @@
                                         </svg>
                                     </div>
                                     <span class="text-sm font-semibold tracking-wide">Click to Enlarge Poster</span>
-                                    <span class="text-xs text-slate-200 mt-1">Dewan SITC • Universiti Pendidikan Sultan Idris</span>
+                                    <span class="text-xs text-slate-200 mt-1">Dewan SITC • 4th - 6th January 2026</span>
                                 </div>
 
-                                <!-- Floating Tag -->
                                 <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur text-white text-[11px] font-bold border border-white/20 flex items-center shadow-lg">
                                     <span class="w-1.5 h-1.5 rounded-full bg-amber-400 mr-1.5"></span>
                                     13th Edition
                                 </div>
                             </div>
 
-                            <!-- Bottom Card Caption -->
                             <div class="p-3 pt-4 flex items-center justify-between text-xs text-slate-600">
                                 <div>
-                                    <p class="font-bold text-slate-800">Dewan SITC, UPSI</p>
+                                    <p class="font-bold text-slate-900">Dewan SITC, UPSI</p>
                                     <p class="text-[11px] text-slate-500">Fakulti Komputeran &amp; Meta-Teknologi</p>
                                 </div>
                                 <button @click="posterModalOpen = true" 
                                         type="button"
-                                        class="px-2.5 py-1 rounded bg-amber-50 text-amber-700 font-semibold hover:bg-amber-100 transition">
-                                    Inspect Poster
+                                        class="px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 font-bold hover:bg-amber-100 transition">
+                                    Expand
                                 </button>
                             </div>
 
@@ -398,7 +364,7 @@
         </div>
     </section>
 
-    <!-- INSTITUTIONAL CO-ORGANIZERS / PARTNERS LOGOS BAR (REPRODUCING POSTER FOOTER) -->
+    <!-- OFFICIAL INSTITUTIONAL CO-ORGANIZERS LOGOS BAR -->
     <section class="py-10 border-y border-slate-200/90 bg-white/80 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-6">
@@ -408,52 +374,32 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
-                <!-- UPSI Crest & Title -->
-                <div class="flex items-center space-x-3 p-3 rounded-xl hover:bg-slate-50 transition w-full justify-center">
-                    <div class="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center text-white font-black text-xs shadow-sm">
-                        UPSI
-                    </div>
-                    <div class="text-left">
-                        <div class="text-xs font-extrabold text-slate-900 leading-tight">UNIVERSITI PENDIDIKAN</div>
-                        <div class="text-[10px] font-semibold text-slate-600">SULTAN IDRIS</div>
-                        <div class="text-[9px] text-amber-700 font-medium">Sultan Idris Education University</div>
-                    </div>
+                <!-- UPSI Logo Card -->
+                <div class="flex items-center space-x-3 p-3.5 rounded-2xl bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition w-full justify-center group h-20">
+                    <img src="{{ asset('images/upsi-logo.png') }}" 
+                         alt="Universiti Pendidikan Sultan Idris (UPSI) Logo" 
+                         class="max-h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                 </div>
 
-                <!-- 100 Tahun SITC Legacy -->
-                <div class="flex items-center space-x-3 p-3 rounded-xl hover:bg-slate-50 transition w-full justify-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-500 to-amber-700 flex items-center justify-center text-white font-black text-[11px] shadow-sm">
-                        100th
-                    </div>
-                    <div class="text-left">
-                        <div class="text-xs font-extrabold text-slate-900 leading-tight">100 TAHUN SITC</div>
-                        <div class="text-[10px] font-medium text-slate-600">SITC • MPSI • IPSI • UPSI</div>
-                        <div class="text-[9px] text-slate-400">Peneraju Kebitaraan Pendidikan</div>
-                    </div>
+                <!-- 100 Tahun SITC Card -->
+                <div class="flex items-center space-x-3 p-3.5 rounded-2xl bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition w-full justify-center group h-20">
+                    <img src="{{ asset('images/sitc-100-logo.png') }}" 
+                         alt="100 Tahun SITC (1922-2022) Logo" 
+                         class="max-h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                 </div>
 
-                <!-- Fakulti Komputeran & Meta-Teknologi -->
-                <div class="flex items-center space-x-3 p-3 rounded-xl hover:bg-slate-50 transition w-full justify-center">
-                    <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white font-black text-xs shadow-sm">
-                        META
-                    </div>
-                    <div class="text-left">
-                        <div class="text-xs font-extrabold text-slate-900 leading-tight">FAKULTI KOMPUTERAN</div>
-                        <div class="text-[10px] font-bold text-amber-600 tracking-wider">&amp; META-TEKNOLOGI</div>
-                        <div class="text-[9px] text-slate-500">Computing &amp; Meta-Technology</div>
-                    </div>
+                <!-- META Teknologi Logo Card -->
+                <div class="flex items-center space-x-3 p-3.5 rounded-2xl bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition w-full justify-center group h-20">
+                    <img src="{{ asset('images/meta-teknologi-logo.png') }}" 
+                         alt="Fakulti Komputeran &amp; Meta-Teknologi (META) Logo" 
+                         class="max-h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                 </div>
 
-                <!-- IERIICH Secretariat -->
-                <div class="flex items-center space-x-3 p-3 rounded-xl hover:bg-slate-50 transition w-full justify-center">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-800 to-amber-600 flex items-center justify-center text-white font-black text-xs shadow-sm">
-                        13th
-                    </div>
-                    <div class="text-left">
-                        <div class="text-xs font-extrabold text-slate-900 leading-tight">IERIICH 13 SECRETARIAT</div>
-                        <div class="text-[10px] font-medium text-slate-600">Final Year Project Division</div>
-                        <div class="text-[9px] text-amber-700 font-semibold">Dewan SITC Exhibition</div>
-                    </div>
+                <!-- IERIICH Secretariat Logo Card -->
+                <div class="flex items-center space-x-3 p-3.5 rounded-2xl bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition w-full justify-center group h-20">
+                    <img src="{{ asset('images/ieriich-compact-logo.png') }}" 
+                         alt="IERIICH 13 Logo" 
+                         class="max-h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                 </div>
             </div>
         </div>
@@ -469,7 +415,7 @@
                             {{ $stat['value'] }}
                         </div>
                         <div class="text-sm font-bold text-slate-800 mt-1">{{ $stat['label'] }}</div>
-                        <div class="text-xs text-slate-500 mt-0.5">{{ $stat['desc'] }}</div>
+                        <div class="text-xs text-slate-500 mt-0.5">{{ $stat['sub'] }}</div>
                     </div>
                 @endforeach
             </div>
@@ -477,7 +423,7 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 bg-slate-50 border-t border-slate-200/80 relative">
+    <section id="about" class="py-20 bg-slate-50 border-t border-slate-200/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
@@ -492,7 +438,7 @@
                         The <strong>International Exhibition of Research, Invention, Innovation, Creativity &amp; Humanities (IERIICH 13)</strong> is the signature annual final year project and research convention organized by the <strong>Fakulti Komputeran &amp; Meta-Teknologi (META)</strong> at <strong>Universiti Pendidikan Sultan Idris (UPSI)</strong>.
                     </p>
                     <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
-                        Hosted in the historic <strong>Dewan SITC</strong>, IERIICH 13 bridges brilliant undergraduate software engineers, computational scientists, and creative technologists directly with venture founders, university examiners, and corporate industry evaluators.
+                        Hosted in the historic <strong>Dewan SITC</strong>, IERIICH 13 bridges graduating software engineers, computational scientists, and creative multimedia technologists directly with venture founders, university examiners, and corporate industry evaluators.
                     </p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -501,23 +447,23 @@
                                 01
                             </div>
                             <h4 class="text-sm font-bold text-slate-900">Industry Validation</h4>
-                            <p class="text-xs text-slate-500 mt-1">Direct feedback from leading tech giants, government agencies, and start-up incubators.</p>
+                            <p class="text-xs text-slate-500 mt-1">Direct feedback from leading tech enterprises, research councils, and start-up accelerators.</p>
                         </div>
                         <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
                             <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-800 flex items-center justify-center font-bold mb-2">
                                 02
                             </div>
                             <h4 class="text-sm font-bold text-slate-900">Commercialization</h4>
-                            <p class="text-xs text-slate-500 mt-1">Fast-track patent consultation and seed funding pathways for high-potential inventions.</p>
+                            <p class="text-xs text-slate-500 mt-1">Fast-track patent consultation and seed funding pathways for high-potential student inventions.</p>
                         </div>
                     </div>
 
                     <div class="pt-4 flex flex-wrap gap-3">
-                        <button @click="registerModalOpen = true" 
-                                class="px-5 py-2.5 rounded-lg text-xs font-bold bg-amber-600 text-white hover:bg-amber-700 transition">
-                            Download Event Handbook (PDF)
-                        </button>
-                        <a href="#showcase" class="px-5 py-2.5 rounded-lg text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition">
+                        <a href="#downloads" 
+                           class="px-5 py-2.5 rounded-xl text-xs font-bold bg-amber-600 text-white hover:bg-amber-700 shadow-xs transition">
+                            Download Exhibition Handbook (PDF)
+                        </a>
+                        <a href="#showcase" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition">
                             Explore Projects &rarr;
                         </a>
                     </div>
@@ -572,12 +518,12 @@
                                 </div>
                                 <div>
                                     <div class="font-bold text-slate-900">Awards &amp; Medals</div>
-                                    <div class="text-slate-600">IERIICH Grand Champion Trophy, Gold, Silver &amp; Bronze Medals, Dean’s Meta-Tech Choice Award</div>
+                                    <div class="text-slate-600">IERIICH Grand Champion Trophy, Gold, Silver &amp; Bronze Medals, Dean’s Meta-Tech Industry Choice Award</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-gradient-to-r from-slate-900 to-slate-800 text-white flex items-center justify-between">
+                        <div class="p-4 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-800 text-white flex items-center justify-between">
                             <div>
                                 <p class="text-xs text-amber-300 font-semibold">Exhibition Secretariat</p>
                                 <p class="text-sm font-bold">fskik.ieriich@upsi.edu.my</p>
@@ -616,14 +562,14 @@
                                 <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-700 shadow-xs">
                                     {{ $track['badge'] }}
                                 </span>
-                                <span class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold text-xs">
-                                    ★
+                                <span class="text-xs font-extrabold text-amber-700">
+                                    {{ $track['project_count'] }}
                                 </span>
                             </div>
                             <h3 class="heading-font text-xl font-bold text-slate-900 group-hover:text-amber-600 transition-colors">
                                 {{ $track['name'] }}
                             </h3>
-                            <p class="text-xs font-semibold text-amber-700 mt-0.5 mb-3">{{ $track['subtitle'] }}</p>
+                            <p class="text-xs font-semibold text-amber-700 mt-0.5 mb-3">{{ $track['lead'] }}</p>
                             <p class="text-xs text-slate-600 leading-relaxed">{{ $track['description'] }}</p>
                         </div>
                         <div class="pt-6 mt-6 border-t border-slate-200/70 flex items-center justify-between text-xs">
@@ -754,11 +700,11 @@
 
                         <!-- Card Action Button -->
                         <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="text-[11px] font-semibold text-amber-700">
-                                {{ $proj['medal_target'] }}
+                            <span class="text-[11px] font-semibold text-amber-700 truncate max-w-[170px]">
+                                {{ $proj['target_award'] }}
                             </span>
                             <button @click="activeProject = {{ json_encode($proj) }}" 
-                                    class="text-xs font-bold text-slate-900 hover:text-amber-600 transition flex items-center">
+                                    class="text-xs font-bold text-slate-900 hover:text-amber-600 transition flex items-center shrink-0">
                                 View Abstract &rarr;
                             </button>
                         </div>
@@ -791,8 +737,8 @@
                         <button @click="activeScheduleDay = {{ $idx }}"
                                 :class="activeScheduleDay === {{ $idx }} ? 'bg-white text-slate-900 shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'"
                                 class="px-5 py-2.5 rounded-xl text-xs sm:text-sm transition-all duration-200 flex items-center space-x-2">
-                            <span>{{ $s['day'] }}</span>
-                            <span class="hidden sm:inline text-xs text-slate-400">• {{ $s['badge'] }}</span>
+                            <span>{{ $s['day_title'] }}</span>
+                            <span class="hidden sm:inline text-xs text-slate-400">• {{ $s['phase'] }}</span>
                         </button>
                     @endforeach
                 </div>
@@ -809,8 +755,8 @@
                         
                         <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200 flex items-center justify-between">
                             <div>
-                                <h4 class="font-bold text-slate-900">{{ $s['date'] }}</h4>
-                                <p class="text-xs text-amber-800">Focus: {{ $s['badge'] }}</p>
+                                <h4 class="font-bold text-slate-900">{{ $s['full_date'] }}</h4>
+                                <p class="text-xs text-amber-800">Focus: {{ $s['phase'] }}</p>
                             </div>
                             <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500 text-slate-950">
                                 Dewan SITC
@@ -833,11 +779,11 @@
                                                     </span>
                                                 @endif
                                             </h5>
-                                            <p class="text-xs text-slate-500 mt-0.5">{{ $item['venue'] }}</p>
+                                            <p class="text-xs text-slate-500 mt-0.5">{{ $item['location'] }} • <span class="text-slate-700 font-medium">{{ $item['speaker'] }}</span></p>
                                         </div>
                                     </div>
-                                    <span class="text-[11px] font-medium text-slate-400 self-start sm:self-center">
-                                        Open Session
+                                    <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 self-start sm:self-center">
+                                        {{ $item['type'] }}
                                     </span>
                                 </div>
                             @endforeach
@@ -870,21 +816,22 @@
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase tracking-wider 
-                                    {{ $award['tier'] === 'grand' ? 'bg-amber-500 text-slate-950' : ($award['tier'] === 'gold' ? 'bg-yellow-100 text-yellow-800 border border-yellow-300' : 'bg-slate-100 text-slate-700') }}">
+                                    {{ $award['badge'] === 'Highest Honor' ? 'bg-amber-500 text-slate-950' : 'bg-slate-100 text-slate-700' }}">
                                     {{ $award['badge'] }}
                                 </span>
                                 <span class="text-xl">🏆</span>
                             </div>
-                            <h3 class="heading-font text-lg font-bold text-slate-900 mb-2">
+                            <h3 class="heading-font text-lg font-bold text-slate-900 mb-1">
                                 {{ $award['title'] }}
                             </h3>
+                            <p class="text-xs font-semibold text-amber-700 mb-2">{{ $award['category'] }}</p>
                             <p class="text-xs text-slate-600 leading-relaxed mb-4">
                                 {{ $award['desc'] }}
                             </p>
                         </div>
                         <div class="pt-4 border-t border-slate-100">
                             <div class="text-[11px] font-bold text-amber-700">
-                                Prize &amp; Grant:
+                                Prize &amp; Accolade:
                             </div>
                             <div class="text-xs font-extrabold text-slate-900 mt-0.5">
                                 {{ $award['prize'] }}
@@ -915,6 +862,88 @@
                         <div class="text-xs font-bold text-slate-800 mt-1">Pitch &amp; Demonstration</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVALUATION JURY & KEYNOTE SPEAKERS -->
+    <section id="judges" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                    Evaluation Committee
+                </span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Distinguished Jury &amp; Industry Panels
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Projects are evaluated by high-ranking academic deans, venture founders, and industry technology directors.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                @foreach($judges as $judge)
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 hover:shadow-lg transition-all duration-300 text-center flex flex-col justify-between">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 text-amber-400 font-black text-xl flex items-center justify-center mx-auto mb-4 shadow-sm border border-slate-700">
+                                {{ substr($judge['name'], 0, 1) }}
+                            </div>
+                            <h3 class="heading-font font-bold text-base text-slate-900">
+                                {{ $judge['name'] }}
+                            </h3>
+                            <p class="text-xs font-bold text-amber-700 mt-0.5">{{ $judge['role'] }}</p>
+                            <p class="text-xs text-slate-500 mt-0.5">{{ $judge['org'] }}</p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-200/70 text-[11px] text-slate-600">
+                            <span class="font-bold text-slate-700">Focus:</span> {{ $judge['spec'] }}
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOADS RESOURCE CENTER -->
+    <section id="downloads" class="py-20 bg-slate-50 border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                    Official Documentation
+                </span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Participant Guidelines &amp; Resources
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Download official templates, booth specifications, and exhibition rubrics.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                @foreach($downloads as $doc)
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-amber-400 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800">
+                                    {{ $doc['file_type'] }}
+                                </span>
+                                <span class="text-xs text-slate-400 font-semibold">{{ $doc['size'] }}</span>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-sm mb-2">
+                                {{ $doc['title'] }}
+                            </h3>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4">
+                                {{ $doc['desc'] }}
+                            </p>
+                        </div>
+                        <button @click="registerModalOpen = true" 
+                                class="w-full py-2 px-3 rounded-lg text-xs font-bold bg-slate-100 hover:bg-amber-600 hover:text-white text-slate-700 transition flex items-center justify-center">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download Kit
+                        </button>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -1059,7 +1088,7 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- PROFESSIONAL FOOTER -->
     <footer class="bg-slate-950 text-white border-t border-slate-800 pt-16 pb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
@@ -1067,23 +1096,23 @@
                 <!-- Col 1: Brand Info -->
                 <div class="lg:col-span-5 space-y-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-yellow-600 text-slate-950 flex items-center justify-center font-black text-lg">
-                            13
-                        </div>
+                        <img src="{{ asset('images/ieriich-emblem.svg') }}" 
+                             alt="IERIICH 13 Emblem" 
+                             class="w-12 h-12 object-contain">
                         <div>
                             <span class="heading-font text-2xl font-black tracking-tight text-white">IERIICH 13</span>
-                            <span class="block text-[10px] text-amber-400 uppercase tracking-widest font-semibold">Exhibition 2026</span>
+                            <span class="block text-[10px] text-amber-400 uppercase tracking-widest font-semibold">Exhibition 2026 • Dewan SITC</span>
                         </div>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
                         International Exhibition of Research, Invention, Innovation, Creativity &amp; Humanities. Organized by Fakulti Komputeran &amp; Meta-Teknologi, Universiti Pendidikan Sultan Idris (UPSI).
                     </p>
                     <div class="text-xs text-slate-500">
-                        📍 Dewan SITC, Kampus Sultan Abdul Jalil Shah, Tanjung Malim, Perak.
+                        📍 Dewan SITC, Kampus Sultan Abdul Jalil Shah, 35900 Tanjung Malim, Perak, Malaysia.
                     </div>
                 </div>
 
-                <!-- Col 2: Quick Links -->
+                <!-- Col 2: Navigation Links -->
                 <div class="lg:col-span-3 space-y-3">
                     <h5 class="text-xs font-bold uppercase tracking-wider text-amber-400">Navigation</h5>
                     <ul class="space-y-2 text-xs text-slate-400">
@@ -1092,6 +1121,7 @@
                         <li><a href="#showcase" class="hover:text-white transition">FYP Projects Directory</a></li>
                         <li><a href="#schedule" class="hover:text-white transition">Itinerary &amp; Timeline</a></li>
                         <li><a href="#awards" class="hover:text-white transition">Awards &amp; Rubrics</a></li>
+                        <li><a href="#judges" class="hover:text-white transition">Jury Panels</a></li>
                         <li><a href="#venue" class="hover:text-white transition">Venue &amp; Maps</a></li>
                     </ul>
                 </div>
@@ -1147,7 +1177,6 @@
         <div class="relative max-w-2xl w-full bg-slate-900 rounded-3xl shadow-2xl border border-slate-700 overflow-hidden"
              @click.away="posterModalOpen = false">
             
-            <!-- Modal Header -->
             <div class="flex items-center justify-between p-4 px-6 border-b border-slate-800 bg-slate-950/60 text-white">
                 <div>
                     <h3 class="heading-font font-bold text-base text-amber-400">IERIICH 13 Official Poster</h3>
@@ -1162,14 +1191,12 @@
                 </button>
             </div>
 
-            <!-- Modal Poster Image Body -->
             <div class="p-4 bg-slate-950 flex justify-center max-h-[75vh] overflow-y-auto">
                 <img src="{{ asset('images/ieriich-poster.jpg') }}" 
                      alt="Official IERIICH 13 Poster" 
                      class="rounded-xl max-h-[70vh] object-contain shadow-2xl border border-slate-800">
             </div>
 
-            <!-- Modal Footer -->
             <div class="p-4 px-6 border-t border-slate-800 bg-slate-950/60 flex items-center justify-between text-xs text-slate-300">
                 <span>Universiti Pendidikan Sultan Idris (UPSI)</span>
                 <a href="{{ asset('images/ieriich-poster.jpg') }}" download="IERIICH_13_Poster.jpg" 
@@ -1201,7 +1228,7 @@
                 <div>
                     <div class="flex items-center space-x-2">
                         <span class="px-2.5 py-0.5 rounded text-[11px] font-black bg-slate-900 text-amber-400" x-text="'BOOTH ' + (activeProject ? activeProject.booth : '')"></span>
-                        <span class="text-xs font-bold text-amber-700 uppercase" x-text="activeProject ? activeProject.track_name : ''"></span>
+                        <span class="text-xs font-bold text-amber-700 uppercase" x-text="activeProject ? activeProject.track_label : ''"></span>
                     </div>
                     <h3 class="heading-font font-bold text-lg text-slate-900 mt-2" x-text="activeProject ? activeProject.title : ''"></h3>
                 </div>
@@ -1224,18 +1251,22 @@
                         <span class="text-slate-700 ml-1" x-text="activeProject ? activeProject.team : ''"></span>
                     </div>
                     <div>
+                        <span class="font-bold text-slate-900">Program:</span>
+                        <span class="text-slate-700 ml-1" x-text="activeProject ? activeProject.program : ''"></span>
+                    </div>
+                    <div>
                         <span class="font-bold text-slate-900">Faculty Supervisor:</span>
                         <span class="text-slate-700 ml-1" x-text="activeProject ? activeProject.supervisor : ''"></span>
                     </div>
                     <div>
-                        <span class="font-bold text-slate-900">Department:</span>
-                        <span class="text-slate-700 ml-1" x-text="activeProject ? activeProject.department : ''"></span>
+                        <span class="font-bold text-slate-900">Location in Dewan SITC:</span>
+                        <span class="text-slate-700 ml-1" x-text="activeProject ? activeProject.zone : ''"></span>
                     </div>
                 </div>
 
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Exhibition Accolade Target:</span>
-                    <span class="ml-2 inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800" x-text="activeProject ? activeProject.medal_target : ''"></span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Award Nomination:</span>
+                    <span class="ml-2 inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800" x-text="activeProject ? activeProject.target_award : ''"></span>
                 </div>
             </div>
 

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 90" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nav-chrome" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="25%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <linearGradient id="nav-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#facc15" />
+      <stop offset="70%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+
+    <filter id="nav-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Left Icon Emblem -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="70" height="70" rx="18" fill="#0f172a" stroke="url(#nav-gold)" stroke-width="2" filter="url(#nav-shadow)" />
+    <!-- Center ring -->
+    <circle cx="35" cy="35" r="24" fill="none" stroke="url(#nav-chrome)" stroke-width="3" />
+    <!-- 13 digits -->
+    <g transform="translate(22, 20)">
+      <path d="M 2 8 L 8 2 L 12 2 L 12 30 L 7 30 L 7 11 L 2 13 Z" fill="url(#nav-gold)" />
+      <path d="M 16 2 L 26 2 L 26 9 L 21 14 L 26 19 L 26 30 L 16 30 L 16 24 L 21 24 L 21 18 L 17 16 L 21 14 L 21 9 L 16 9 Z" fill="url(#nav-gold)" />
+    </g>
+    <!-- Tiny flare -->
+    <path d="M 12 12 Q 12 16 16 16 Q 12 16 12 20 Q 12 16 8 16 Q 12 16 12 12 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Right Typography -->
+  <g transform="translate(95, 20)">
+    <!-- Main IERIICH title with metallic style -->
+    <g font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-weight="900">
+      <text x="0" y="36" font-size="38" letter-spacing="2.5" fill="#0f172a">IERII</text>
+      <text x="120" y="36" font-size="38" letter-spacing="2.5" fill="url(#nav-gold)">C</text>
+      <text x="156" y="36" font-size="38" letter-spacing="2.5" fill="#0f172a">H</text>
+    </g>
+
+    <!-- Edition Badge Pill -->
+    <rect x="195" y="12" width="46" height="22" rx="11" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="218" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">13TH</text>
+
+    <!-- Subtitle Line -->
+    <text x="0" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#64748b">
+      RESEARCH • INVENTION • INNOVATION
+    </text>
+  </g>
+</svg>
