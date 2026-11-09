@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Cabinet Grotesk', 'Space Grotesk', 'Montserrat', sans-serif;
+    --color-gold-50: #fbf7ee;
+    --color-gold-100: #f5eccf;
+    --color-gold-200: #ecda9e;
+    --color-gold-300: #dfc267;
+    --color-gold-400: #d4a93c;
+    --color-gold-500: #be8e25;
+    --color-gold-600: #a1701c;
+    --color-gold-700: #805119;
+    --color-gold-800: #69421b;
+    --color-gold-900: #57371a;
+}
+
+/* Custom metallic & crystal styles */
+.gradient-gold-text {
+    background: linear-gradient(135deg, #d4a93c 0%, #f7df94 40%, #c49429 70%, #996e19 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-chrome-text {
+    background: linear-gradient(180deg, #64748b 0%, #334155 45%, #0f172a 75%, #475569 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-silver-gold {
+    background: linear-gradient(135deg, #475569 0%, #94a3b8 35%, #d4a93c 70%, #f3da88 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.crystal-pattern {
+    background-color: #f8fafc;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(212, 169, 60, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(148, 163, 184, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(212, 169, 60, 0.06) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(100, 116, 139, 0.08) 0px, transparent 50%),
+        linear-gradient(135deg, #ffffff 0%, #f1f5f9 50%, #e2e8f0 100%);
+}
+
+.crystal-facet {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(241, 245, 249, 0.65));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.crystal-facet-gold {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(254, 249, 235, 0.75));
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 169, 60, 0.3);
+}
+
+.gold-glow {
+    box-shadow: 0 10px 30px -10px rgba(212, 169, 60, 0.35);
+}
+
+.glass-nav {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
